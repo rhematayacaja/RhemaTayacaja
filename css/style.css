@@ -859,6 +859,85 @@ header{
 .sound-btn:hover {
     background: rgba(0,0,0,0.8);
 }
+/* ===============================
+   RESPONSIVE GLOBAL - MOBILE FIRST
+   =============================== */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    .container-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .cover {
+        flex-direction: column;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .text-cover {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-cover h1 {
+        font-size: 32px;
+    }
+
+    .image_cover img {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    .container_target-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .history {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer_social-icons {
+        justify-content: center;
+    }
+
+    .video-section video {
+        height: 40vh;
+    }
+
+    .sound-btn {
+        bottom: 10px;
+        right: 10px;
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
 
 
 
